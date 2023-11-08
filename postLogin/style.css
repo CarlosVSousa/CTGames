@@ -1,0 +1,293 @@
+.abas {
+    margin: 30px;
+    left: 400px;
+    top: 2px;
+    position: absolute;
+}
+
+.abas > a {
+    font-size: large;
+    color: aliceblue;
+    margin: 10px;
+
+}
+
+.banner {
+    background-color: #0E1726;
+    display: block;
+    width: 100%;
+    height: 80px;
+    left: 0%;
+    top: 0%;
+    position: absolute;
+    display: flex;
+    background-position: center;
+}
+
+.banner > h1 {
+    left: 110px;
+    color: rgb(196, 8, 8);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.loginDados {
+    background-color: #0d1b38;
+    width: 380px;
+    height: 100%;
+    top: 80px;
+    left: 0%;
+    position: absolute;
+}
+
+.loginDados > div {
+    color: white;
+    left: 30px;
+    position: absolute;
+    font-size: 30px;
+    top: 50px;
+
+}
+
+.btGerenciar {
+    height: 30px;
+    width: 150px;
+    top: 140px;
+    left: -70px;
+    position: relative;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border-radius: 20px;
+    border: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    cursor: pointer;
+}
+
+.btSair {
+    height: 30px;
+    width: 80px;
+    top: 140px;
+    left: -60px;
+    position: relative;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border-radius: 20px;
+    border: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    cursor: pointer;
+}
+
+.formListar {
+    background-color: #0d1b38;
+    display: block;
+    width: 1100px;
+    height: 500px;
+    left: 470px;
+    bottom: 250px;
+    /* position: absolute; */
+    background-position: center;
+}
+
+body {
+    background-color: #162035;
+}
+
+.formBuscar {
+    margin-bottom: 30px;
+    top: 100px;
+    left: 450px;
+    color: white;
+    position: relative;
+}
+
+.formBuscar > h1 {
+    margin-left: 250px;
+}
+
+.formBuscar > h3 {
+    margin-left: 470px;
+}
+
+.buscarrank, .btBuscarRank {
+    left: 440px;
+    margin-left: 10px;
+    position: relative;
+    
+}
+
+.btBuscarRank {
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border-radius: 20px;
+    border: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    cursor: pointer;
+}
+
+.jogosCad , .cadGames {
+    font-size: xx-large;
+    margin-bottom: 30px;
+    top: 100px;
+    left: 450px;
+    color: white;
+    position: relative;
+}
+
+.textoCampos { z-index: 1;
+    height: 500px;
+    left: 590px;
+    top: 320px;
+    position: absolute;
+    
+}
+
+.textoCampos > h2 {
+    margin-bottom: 32px;
+    background-color: rgb(22, 73, 182);
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px 0;
+}
+
+.dados {
+    font-size: xx-large;
+    margin-bottom: 200px;
+    top: 100px;
+    left: 450px;
+    color: white;
+    position: relative;
+}
+
+.menuDados {
+    background-color: #0d1b38;
+    display: block;
+    width: 1200px;
+    height: 500px;
+    left: 470px;
+    bottom: 250px;
+    position: absolute;
+    background-position: center;
+}
+
+
+
+.UserCadastro, .EmailCadastro, .SenhaAntiga, .SenhaNova {
+    margin: 13px;
+    height: 30px;
+    left: 290px;
+    width: 600px;
+    top: 10px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+
+}
+
+.avatarlabel {
+    font-size: large;
+    background-color: white;
+}
+
+.btSalvar {
+        height: 30px;
+        width: 200px;
+        top: 430px;
+        left: 400px;
+        position: absolute;
+        background-color: rgb(0, 140, 255);
+        color: white;
+        border-radius: 20px;
+        border: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        cursor: pointer;
+}
+
+.btDeletar {
+     height: 30px;
+        width: 200px;
+        top: 430px;
+        left: 620px;
+        position: absolute;
+        background-color: rgb(233, 14, 24);
+        color: white;
+        border-radius: 20px;
+        border: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        cursor: pointer;
+}
+
+.imgValorant, .imgLol, .imgCsgo {
+    margin: 30px;
+    width: 150px;
+    cursor: pointer;
+    
+}
+
+.cadGames > p {
+    margin-left: 75px
+}
+
+
+.imgValorant2, .imgLol2, .imgCsgo2 {
+    margin: 10px;
+    width: 100px;
+    cursor: pointer;
+    
+}
+
+#avatar-input {
+    margin: 5px;
+  }
+
+#avatar-preview { 
+    width: 100px;
+    height: 100px;
+    left: 130px;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.avatar {
+    height: 100px;
+    width: 100px;
+    left: 100px;
+    position: relative;
+    bottom: -100px;
+    border-radius: 100px;
+    border: black solid;
+
+}
+
+
+.setupJogos { 
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btlolSair, .btvalSair, .btcsgoSair, .btinfoSalvar, .btinfoDeletar, .btinfoSair, .btcadSalvar {
+        background-color: rgb(0, 140, 255);
+        color: white;
+        border-radius: 20px;
+        border: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        cursor: pointer;
+
+}
+
+.imgValorantBuscar, .imgLolBuscar, .imgCsgoBuscar {
+    position: relative;
+    margin: 10px;
+    width: 70px;
+    left: 400px;
+    cursor: pointer;
+}

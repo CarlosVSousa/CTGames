@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dados">Dados pessoais</div>>
+    <div class="banner">
+        <h1>CTGames</h1>
+        <div class="abas">
+            <a href="/mainPage/mainPage.html">Inicio</a>
+            <a href="/mainPage/cadastro.html">Cadastro</a>
+            <a href="/postLogin/index.html">Meus Jogos</a>
+            <a href="/postLogin/buscar.html">Buscar Jogadores</a>
+        </div>
+    </div>
+    <div class="loginDados">
+        <div id="user"></div>
+        <img class="avatar">
+        <input type="button" class="btGerenciar" value="Gerenciar Conta" onclick="gerenciar()">
+        <input type="button" class="btSair" value="Sair" onclick="sair()">
+    </div>
+    <div class="textoCampos">
+        <h2>Usuário:</h2>
+        <h2>Email:</h2>
+        <h2>Senha Atual:</h2>
+        <h2>Nova Senha:</h2>
+    </div>
+    <div class="menuDados">
+        <label class="avatarlabel" for="avatar-input">Escolha uma imagem para o Avatar:</label>
+        <input type="file" id="avatar-input" accept="image/*">
+        <div id="avatar-preview"></div>
+        <input type="text" name="nome" class="UserCadastro"> <br> 
+        <input type="text" name="email" class="EmailCadastro"> <br> 
+        <input type="password" name="senhaAntiga" placeholder="********" class="SenhaAntiga"> <br> 
+        <input type="password" name="novaSenha" placeholder="Nova Senha" class="SenhaNova">
+        <input type="button" class="btSalvar" value="Salvar alterações" onclick="salvar()">
+        <input type="button" class="btDeletar" value="Deletar conta" onclick="deletar()">
+    </div>
+
+    <script src="gerenciar.js"></script>
+</body>
+</html>

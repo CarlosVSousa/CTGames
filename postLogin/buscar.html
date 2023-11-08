@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>CTGames</h1>
+        <div class="abas">
+            <a href="/mainPage/mainPage.html">Inicio</a>
+            <a href="/mainPage/cadastro.html">Cadastro</a>
+            <a href="/postLogin/index.html">Meus Jogos</a>
+            <a href="/postLogin/buscar.html">Buscar Jogadores</a>
+        </div>
+    </div>
+    <div class="loginDados">
+        <div id="user"></div>
+        <img class="avatar">
+        <input type="button" class="btGerenciar" value="Gerenciar Conta" onclick="gerenciar()">
+        <input type="button" class="btSair" value="Sair" onclick="sair()">
+    </div>
+    <div class="formBuscar">
+        <h1>Selecione o jogo que deseja buscar jogadores</h1>
+        <img src="/postLogin/images/valorantlogo.png" id="imgvalbuscar" value="Valorant" class="imgValorantBuscar" alt="valorantbuscar" onclick="buscarval()">
+        <img src="/postLogin/images/lollogo.png" id="imglolbuscar" value="Lol" class="imgLolBuscar" alt="lolbuscar" onclick="buscarlol()">
+        <img src="/postLogin/images/csgologo.png" id="imgcsgobuscar" value="Cs" class="imgCsgoBuscar" alt="csgobuscar" onclick="buscarcsgo()">
+        <h3>Selecione o Rank</h1>
+        <select id="rankbuscar" class="buscarrank">
+            <option value="vazio"></option>
+
+        </select>  
+        <input type="button" class="btBuscarRank" value="Buscar" onclick="buscarrank()">
+        <br> <br>
+        <ul class="formListar"> 
+            
+        </ul>
+    </div>
+    <script src="buscar.js"></script>
+</body>
+</html>

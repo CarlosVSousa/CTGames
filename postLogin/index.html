@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="jogosCad">Jogos Cadastrados<br>
+        <div class="setupJogos">
+            <dialog class="alterarinfoval">
+                <h1>Preencha o que deseja alterar do Valorant</h1>
+                <input type="text" id="nickval" class="valinfonick"> 
+                <select id="rankval" class="valinforank">
+                    <option value="Ferro1">Ferro 1</option>
+                    <option value="Ferro2">Ferro 2</option>
+                    <option value="Ferro3">Ferro 3</option>
+                    <option value="Bronze1">Bronze 1</option>
+                    <option value="Bronze2">Bronze 2</option>
+                    <option value="Bronze3">Bronze 3</option>
+                    <option value="Prata1">Prata 1</option>
+                    <option value="Prata2">Prata 2</option>
+                    <option value="Prata3">Prata 3</option>
+                    <option value="Ouro1">Ouro 1</option>
+                    <option value="Ouro2">Ouro 2</option>
+                    <option value="Ouro3">Ouro 3</option>
+                    <option value="Platina1">Platina 1</option>
+                    <option value="Platina2">Platina 2</option>
+                    <option value="Platina3">Platina 3</option>
+                    <option value="Diamante1">Diamante 1</option>
+                    <option value="Diamante2">Diamante 2</option>
+                    <option value="Diamante3">Diamante 3</option>
+                    <option value="Ascendente1">Ascendente 1</option>
+                    <option value="Ascendente2">Ascendente 2</option>
+                    <option value="Ascendente3">Ascendente 3</option>
+                    <option value="Imortal1">Imortal 1</option>
+                    <option value="Imortal2">Imortal 2</option>
+                    <option value="Imortal3">Imortal 3</option>
+                    <option value="Radiante">Radiante</option>
+        
+                </select> <br></br>
+                <input type="button" class="btinfoSalvar" value="Alterar Informações" onclick="valAlterar()">
+                <input type="button" class="btinfoDeletar" value="Deletar" onclick="valDeletar()">
+                <input type="button" class="btinfoSair" value="Sair" onclick="dialogSair()">
+
+            </dialog>
+
+            <dialog class="alterarinfolol">
+                <h1>Preencha o que deseja alterar do League of Legends</h1>
+                <input type="text" id="nicklol" class="lolinfonick"> 
+                <select id="ranklol" class="lolinforank">
+                    <option value="Ferro1">Ferro 1</option>
+                    <option value="Ferro2">Ferro 2</option>
+                    <option value="Ferro3">Ferro 3</option>
+                    <option value="Bronze1">Bronze 1</option>
+                    <option value="Bronze2">Bronze 2</option>
+                    <option value="Bronze3">Bronze 3</option>
+                    <option value="Prata1">Prata 1</option>
+                    <option value="Prata2">Prata 2</option>
+                    <option value="Prata3">Prata 3</option>
+                    <option value="Ouro1">Ouro 1</option>
+                    <option value="Ouro2">Ouro 2</option>
+                    <option value="Ouro3">Ouro 3</option>
+                    <option value="Platina1">Platina 1</option>
+                    <option value="Platina2">Platina 2</option>
+                    <option value="Platina3">Platina 3</option>
+                    <option value="Diamante1">Diamante 1</option>
+                    <option value="Diamante2">Diamante 2</option>
+                    <option value="Diamante3">Diamante 3</option>
+                    <option value="Mestre">Mestre</option>
+                    <option value="GraoMestre">Grão-Mestre</option>
+                    <option value="Desafiante">Desafiante</option>
+        
+                </select> <br></br>
+                <input type="button" class="btinfoSalvar" value="Alterar Informações" onclick="lolAlterar()">
+                <input type="button" class="btinfoDeletar" value="Deletar" onclick="lolDeletar()">
+                <input type="button" class="btinfoSair" value="Sair" onclick="dialogSair()">
+
+            </dialog>
+
+            <dialog class="alterarinfocsgo">
+                <h1>Preencha o que deseja alterar do League of Legends</h1>
+                <input type="text" id="nickcsgo" class="csgoinfonick"> 
+                <select id="rankcsgo" class="csgoinforank">
+                    <option value="Prata1">Prata 1</option>
+                    <option value="Prata2">Prata 2</option>
+                    <option value="Prata3">Prata 3</option>
+                    <option value="Prata4">Prata 4</option>
+                    <option value="PrataElite">Prata de Elite</option>
+                    <option value="PrataEliteMestre">Prata de Elite Mestre</option>
+                    <option value="Ouro1">Ouro 1</option>
+                    <option value="Ouro2">Ouro 2</option>
+                    <option value="Ouro3">Ouro 3</option>
+                    <option value="OuroMestre">Ouro Mestre</option>
+                    <option value="Ak1">Ak 1</option>
+                    <option value="Ak2">Ak 2</option>
+                    <option value="AkCruzada">Ak Cruzada</option>
+                    <option value="Xerife">Xerife</option>
+                    <option value="Aguia1">Aguia 1</option>
+                    <option value="Aguia2">Aguia 2</option>
+                    <option value="Supremo">Supremo</option>
+                    <option value="Global">Global</option>
+        
+                </select> <br></br>
+                <input type="button" class="btinfoSalvar" value="Alterar Informações" onclick="csgoAlterar()">
+                <input type="button" class="btinfoDeletar" value="Deletar" onclick="csgoDeletar()">
+                <input type="button" class="btinfoSair" value="Sair" onclick="dialogSair()">
+
+            </dialog>
+        </div>
+    </div>
+
+    <div class="cadGames">Cadastrar Jogos
+        <p>Selecione o jogo que deseja adicionar</p>
+        <img src="/postLogin/images/valorantlogo.png" class="imgValorant" onclick="valorant()" alt="valorant">
+        <img src="/postLogin/images/lollogo.png" class="imgLol" onclick="lol()" alt="lol">
+        <img src="/postLogin/images/csgologo.png" class="imgCsgo" onclick="csgo()" alt="csgo">
+
+    </div>
+
+    <dialog class="dialogval">
+        <h1>Insira seus dados do Valorant</h1>
+        <input type="text" class="valorantnick" placeholder="Nick"> 
+        <select class="valorantrank">
+            <option value="Ferro1">Ferro 1</option>
+            <option value="Ferro2">Ferro 2</option>
+            <option value="Ferro3">Ferro 3</option>
+            <option value="Bronze1">Bronze 1</option>
+            <option value="Bronze2">Bronze 2</option>
+            <option value="Bronze3">Bronze 3</option>
+            <option value="Prata1">Prata 1</option>
+            <option value="Prata2">Prata 2</option>
+            <option value="Prata3">Prata 3</option>
+            <option value="Ouro1">Ouro 1</option>
+            <option value="Ouro2">Ouro 2</option>
+            <option value="Ouro3">Ouro 3</option>
+            <option value="Platina1">Platina 1</option>
+            <option value="Platina2">Platina 2</option>
+            <option value="Platina3">Platina 3</option>
+            <option value="Diamante1">Diamante 1</option>
+            <option value="Diamante2">Diamante 2</option>
+            <option value="Diamante3">Diamante 3</option>
+            <option value="Ascendente1">Ascendente 1</option>
+            <option value="Ascendente2">Ascendente 2</option>
+            <option value="Ascendente3">Ascendente 3</option>
+            <option value="Imortal1">Imortal 1</option>
+            <option value="Imortal2">Imortal 2</option>
+            <option value="Imortal3">Imortal 3</option>
+            <option value="Radiante">Radiante</option>
+
+        </select> <br></br>
+        <input type="button" class="btcadSalvar" value="Cadastrar Jogo" onclick="valSalvar()">
+        <input type="button" class="btvalSair" value="Sair" onclick="dialogSair()">
+    </dialog>
+
+    <dialog class="dialoglol">
+        <h1>Insira seus dados do League of Legends</h1>
+        <input type="text" class="lolnick" placeholder="Nick"> 
+        <select class="lolrank">
+            <option value="Ferro1">Ferro 1</option>
+            <option value="Ferro2">Ferro 2</option>
+            <option value="Ferro3">Ferro 3</option>
+            <option value="Bronze1">Bronze 1</option>
+            <option value="Bronze2">Bronze 2</option>
+            <option value="Bronze3">Bronze 3</option>
+            <option value="Prata1">Prata 1</option>
+            <option value="Prata2">Prata 2</option>
+            <option value="Prata3">Prata 3</option>
+            <option value="Ouro1">Ouro 1</option>
+            <option value="Ouro2">Ouro 2</option>
+            <option value="Ouro3">Ouro 3</option>
+            <option value="Platina1">Platina 1</option>
+            <option value="Platina2">Platina 2</option>
+            <option value="Platina3">Platina 3</option>
+            <option value="Diamante1">Diamante 1</option>
+            <option value="Diamante2">Diamante 2</option>
+            <option value="Diamante3">Diamante 3</option>
+            <option value="Mestre">Mestre</option>
+            <option value="GraoMestre">Grão-Mestre</option>
+            <option value="Desafiante">Desafiante</option>
+
+        </select> <br></br>
+        <input type="button" class="btcadSalvar" value="Cadastrar Jogo" onclick="lolSalvar()">
+        <input type="button" class="btlolSair" value="Sair" onclick="dialogSair()">
+    </dialog>
+
+    <dialog class="dialogcsgo">
+        <h1>Insira seus dados do Cs GO</h1>
+        <input type="text" class="csgonick" placeholder="Nick"> 
+        <select class="csgorank">
+            <option value="Prata1">Prata 1</option>
+            <option value="Prata2">Prata 2</option>
+            <option value="Prata3">Prata 3</option>
+            <option value="Prata4">Prata 4</option>
+            <option value="PrataElite">Prata de Elite</option>
+            <option value="PrataEliteMestre">Prata de Elite Mestre</option>
+            <option value="Ouro1">Ouro 1</option>
+            <option value="Ouro2">Ouro 2</option>
+            <option value="Ouro3">Ouro 3</option>
+            <option value="OuroMestre">Ouro Mestre</option>
+            <option value="Ak1">Ak 1</option>
+            <option value="Ak2">Ak 2</option>
+            <option value="AkCruzada">Ak Cruzada</option>
+            <option value="Xerife">Xerife</option>
+            <option value="Aguia1">Aguia 1</option>
+            <option value="Aguia2">Aguia 2</option>
+            <option value="Supremo">Supremo</option>
+            <option value="Global">Global</option>
+        
+        </select> <br></br>
+        <input type="button" class="btcadSalvar" value="Cadastrar Jogo" onclick="csgoSalvar()">
+        <input type="button" class="btcsgoSair" value="Sair" onclick="dialogSair()">
+    </dialog>
+    <div class="banner">
+        <h1>CTGames</h1>
+        <div class="abas">
+            <a href="/mainPage/mainPage.html">Inicio</a>
+            <a href="/mainPage/cadastro.html">Cadastro</a>
+            <a href="/postLogin/index.html">Meus Jogos</a>
+            <a href="/postLogin/buscar.html">Buscar Jogadores</a>
+        </div>
+    </div>
+    <div class="loginDados">
+        <div id="user"></div>
+        <img class="avatar">
+        <input type="button" class="btGerenciar" value="Gerenciar Conta" onclick="gerenciar()">
+        <input type="button" class="btSair" value="Sair" onclick="sair()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
